@@ -1,0 +1,186 @@
+@media (max-width: 767px) {
+  /* General adjustments */
+  body {
+    font-size: 14px; /* Smaller font for better readability on small screens */
+  }
+
+  .header {
+    padding: 0 10px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .header img {
+    width: 100%; /* Make logo full width, adjusts to screen size */
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack navbar items vertically */
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+    font-size: 14px; /* Smaller font size for navbar links */
+    text-align: center;
+  }
+
+  #login {
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .input-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    display: none; /* Hide icon for mobile */
+  }
+
+  .main-Title p {
+    font-size: 32px; /* Smaller main title */
+    margin: 20px;
+  }
+
+  .paragraphDisc p {
+    font-size: 16px; /* Smaller paragraph font */
+    margin: 20px;
+  }
+
+  .buttons .try-butt {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
+  .plan-button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  /* Features section */
+  .feature1img {
+    width: 100%; /* Make feature images full width */
+    height: auto;
+  }
+
+  .features-icon {
+    margin-top: 80px;
+  }
+
+  .feature1 {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #333333;
+  }
+
+  /* Pricing section */
+  .pricing-plans {
+    flex-direction: column; /* Stack pricing plans vertically */
+    margin-top: 20px;
+  }
+
+  .free-Plans, .pro-Plan, .Premium-Plan {
+    margin: 10px 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .price-tag {
+    font-size: 20px;
+  }
+
+  /* About us section */
+  .about-us {
+    margin-top: 30%;
+    width: 100%;
+  }
+
+  .title-aboutus {
+    font-size: 36px;
+    margin-left: 15px;
+  }
+
+  .our-mission {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .story {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .whatmake-usdiff {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  /* Contact section */
+  .Contactus li {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .footerContainer {
+    padding-bottom: 15px;
+  }
+
+  .footer-sections {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .socials {
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .footerIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Hiding large images */
+  .cover-Page img,
+  #icon1,
+  #pen,
+  #story-pict,
+  #template1 {
+    display: none;
+  }
+
+  /* Ready to try section */
+  .readytotry {
+    flex-direction: column;
+    margin-top: 20%;
+  }
+
+  .ready-section p {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .button-TRY {
+    font-size: 26px;
+  }
+
+  .ready-btn1 {
+    padding: 20px 50px;
+    font-size: 14px;
+  }
+}

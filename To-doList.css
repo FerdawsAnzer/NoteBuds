@@ -1,0 +1,146 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "popins",sans-serif;
+}
+/*Change the position in the page of the to do list*/
+main{
+  background-color: #f6f6f4;
+  min-height: 100vh;
+  align-items: center;
+  /*display: flex;*/
+  justify-content: center;
+  margin-left: 50px;
+}
+.Container{
+  color: black;
+  background: #fff;
+  padding: 25px;
+  width: 800px;
+  border-radius:10px ;
+  
+}
+.todo-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c9d3e8;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 30px;
+}
+.todo-body input{
+  flex: 1;
+  border:none;
+  outline: none;
+  background: transparent;
+  padding: 15px 0;
+  font-size: 20px;
+}
+.todo-body img{
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+ margin-right: 7px;
+ background: cadetblue;
+ border-radius: 25px;
+}
+.list-items li{
+  list-style: none;
+  font-size:18px ;
+  cursor: pointer;
+  padding: 10px;
+}
+.list-items li{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background: #edeef0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.todo-controls{
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+}
+h5{
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(9, 9, 117);
+}
+
+
+
+.list-items li{
+  opacity: 0;
+  animation: new-itemanimation 0.3s linear forwards;
+}
+@keyframes new-itemanimation {
+  from{
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+  
+}
+li.delete-item {
+  animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94)
+    forwards;
+  transform-origin: 0% 100%;
+}
+
+@keyframes removed-item-animation {
+  0% {
+    opacity: 1;
+    transform: rotateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(600px) rotateZ(90deg);
+  }
+}
+.greetingContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.dateText{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+  
+.greetingContainer .greeting{
+  font-size: 39px;
+  font-family:'Arial', 'Helvetica', sans-serif;
+}
+.greeting .emojiGreeting{
+ position: relative;
+ border-radius: 25px;
+ top: 12px;
+ margin-left: 17px;
+ width: 50px;
+ background-color: #fff;
+}
+ .dateOfTheDayText{
+  margin-left: 5px;
+  font-size: 17px;
+  font-family:'Arial', 'Helvetica', sans-serif;
+  color: #839192;
+}

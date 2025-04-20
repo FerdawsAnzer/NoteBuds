@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="HomePage.css">
+    <script src="dropdownMenu.js" defer></script>
+  </head>
+
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <li><span class="logo">NoteBuds</span><button onclick="toggleSidebar()" id="toggle-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+              <path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z" />
+            </svg></button></li>
+        <!--Open and close the side bar button-->
+
+        <li class="active">
+          <a href="indexSideBar.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+              <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+            </svg><span>Home</span></a>
+        </li>
+        <li>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+              <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
+            </svg><span>Calendar</span></a>
+        </li>
+        <!--DropDown menu-->
+        <li>
+          <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+              <path d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+            </svg>
+            <span>Create</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+              <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+            </svg>
+          </button>
+          <ul class="sub-menu">
+            <div>
+              <li><a href="#">New Note</a></li>
+              <li><a href="#addNewNote">All Notes</a></li>
+              <li><a href="#">Shared Notes</a></li>
+            </div>
+          </ul>
+        </li>
+        <!--DropDown menu finish here-->
+        <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+            <path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z" />
+          </svg>
+          <span>Todo-Lists</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+          </svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a href="to-doList.html">Work</a></li>
+            <li><a href="to-doList.html">Study</a></li>
+            <li><a href="to-doList.html">Personal</a></li>
+          </div>
+        </ul>
+        </li>
+        <li>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+              <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z" />
+            </svg><span>Bin</span></a>
+        </li>
+        <a id="imgNew"><img class="newComingLogo" src="imgs/newComings.png"></a>
+      </ul>
+    </nav>
+    <main>
+      <div class=" welcomText"><h1 >WELCOME!</h1><img src="imgs/afternoon.gif" class="welcomeGif"></div>
+
+      <label class="ui-switch" >
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const webPage = document.querySelector('body');
+            const sidebar=document.getElementById('sidebar');
+            function darkMode() {
+              if (darkModeToggle.checked) {
+                webPage.style.backgroundColor = 'black';
+                webPage.style.color = 'white';
+                sidebar.style.backgroundColor='black';
+                sidebar.style.color = 'white';
+
+                document.querySelectorAll('p, h1, h2, h3, h4, span, a, label').forEach(el => {
+                  el.style.color = 'white';
+                });
+                //to change the color of google fonts that i used in sideBar
+                document.querySelectorAll('svg path').forEach(path => {
+                  path.setAttribute('fill', 'white');
+                });
+              } else {
+                webPage.style.backgroundColor = '#ffffff';
+                webPage.style.color = '#535353';
+                sidebar.style.backgroundColor='#ffffff';
+                sidebar.style.color = '#535353';
+                document.querySelectorAll('p, h1, h2, h3, h4, span, a,li, label').forEach(el => {
+                el.style.color = '#535353';
+                //to change the color of google fonts that i used in sideBar
+                document.querySelectorAll('svg path').forEach(path => {
+                path.setAttribute('fill', '#535353');
+                });
+
+              });
+
+              }
+            }
+    
+            darkModeToggle.addEventListener('change', darkMode);
+          });
+          </script>
+        <input type="checkbox" id="darkModeToggle">
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+      </label>
+      
+      <div class="noteContainerBtn">
+        <button id="add-note"><i class="ri-pencil-line"></i>Add Your Note</button>
+      </div>
+      <button class="email-btn"><i class="ri-mail-line"></i></button>
+      <button class="notification-btn"><i class="ri-notification-3-line"></i></button>
+
+      <div id="addNewNote" class="noteContainer">
+        <textarea class="note" id="NoteStyle"></textarea>
+      </div>
+      <div class="noteContainer" id="footer">
+        <p>Privacy Policy Terms of Use</p>
+        <p>2025 &#169 <b>NoteBuds</b></p>
+      </div>
+    </main>
+  </body>
+
+  </html>
