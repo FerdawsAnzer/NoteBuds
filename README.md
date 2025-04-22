@@ -18,9 +18,10 @@ log in, and manage their notes in an organized and user-friendly interface.
 
 ---
 
-## 📸 Screenshots
+## 📸DEMO
 
 
+![NOTEBUDSDEMO](https://github.com/user-attachments/assets/74ee67e1-f4e1-4332-86e1-d0def907b2b8)
 
 ---
 
